@@ -16,5 +16,5 @@ test:
 production:
   <<: *default
   database: my_web_production
-  username: john
-  password: ''
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
