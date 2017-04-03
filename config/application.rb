@@ -33,5 +33,7 @@ module MyWeb
       g.skip_routes true
     end
     config.generators.test_framework false
+
+    config.i18n.load_path += Dir[File.join(Rails.root, 'config', 'locales', '**', '*.{rb,yml}')]
   end
 end
