@@ -30,5 +30,6 @@ group :development do
   gem 'spring'
   gem 'puma'
   gem 'quiet_assets'
+  gem 'better_errors'
 end
 
