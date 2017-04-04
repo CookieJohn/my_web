@@ -7,6 +7,9 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+    / Nav
   	= render partial: "common/navbar"
     .container-fluid
     	= yield
+    / GA
+    = render partial: "common/google_analytics"
