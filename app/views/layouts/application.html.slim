@@ -9,7 +9,6 @@ html
   body
     / Nav
   	= render partial: "common/navbar"
-    .container-fluid
-    	= yield
+    = yield
     / GA
     = render partial: "common/google_analytics"

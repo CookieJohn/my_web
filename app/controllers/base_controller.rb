@@ -4,4 +4,8 @@ class BaseController < ApplicationController
   def index
   	set_meta
   end
+
+  def resume
+  	set_meta
+  end
 end

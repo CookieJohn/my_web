@@ -1,7 +1,0 @@
-.col-md-3
-	- ENV['FB_ID'] ||= ENV["RACK_ENV"] == 'production' ? ENV['FB_ID'] : '4'
-	= image_tag "https://graph.facebook.com/#{ENV['FB_ID']}/picture?type=large", size: '200x200', class: 'user-image img-responsive center-block'
-	br
-	h3 = '吳秉勳'
-.col-md-9
-	h4 = '經歷'
