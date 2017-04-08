@@ -1,0 +1,23 @@
+.text-center
+	.user
+		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'image img-responsive center-block'
+		hr.divider
+		.info
+	= "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+
+section#about
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading 經歷
+        h3.section-subheading.text-muted 上班經歷
+    .row
+      .col-lg-12
+        ul.timeline
+					- jobs_array.each_with_index do |job_name, index| 
+						- if index.odd?
+							li.timeline-inverted
+								= render partial: "job_section", locals: {job_name: job_name}
+						- else 
+							li
+								= render partial: "job_section", locals: {job_name: job_name}
