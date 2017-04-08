@@ -15,10 +15,12 @@ zh-TW:
       server: 伺服器：
       other: 其他：
     content:
-      front_end: JavaScript, CSS
+      js: JavaScript
+      css: CSS
       back_end: Ruby on rails
       database: PostgreSQL
-      server: AWS, Ubuntu
+      aws: AWS
+      ubuntu: Ubuntu
       other: Elasticsearch
   job:
     TripMoment: 
