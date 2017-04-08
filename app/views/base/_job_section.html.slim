@@ -1,8 +1,22 @@
-.timeline-image
-  img.rounded-circle.img-fluid alt="" src="" /
-.timeline-panel
-  .timeline-heading
-    h4 = i18n_job(job_name, :start_time)
-    h4.subheading = i18n_job(job_name, :title)
-  .timeline-body
-    p.text-muted = i18n_job(job_name, :description)
+/ .timeline-image
+/   img.rounded-circle.img-fluid alt="" src="" /
+/ .timeline-panel
+/   .timeline-heading
+/     h4 = i18n_job(job_name, :start_time)
+/     h4.subheading = i18n_job(job_name, :title)
+/   .timeline-body
+/     p.text-muted = i18n_job(job_name, :description)
+.timeline-entry-inner
+	time.timeline-time datetime="2014-01-10T03:45" 
+	  span = i18n_job(job_name, :start_year)
+	  span = i18n_job(job_name, :start_month)
+	/ .timeline-icon.bg-success
+	.timeline-icon
+	  / i.entypo-feather
+	  = image_tag i18n_job(job_name, :image_url), size: '30x30'
+	.timeline-label
+	  h2
+	    / a href="#"  Art Ramadani
+	    = link_to i18n_job(job_name, :title), i18n_job(job_name, :url), target: '_blank'
+	    / span = i18n_job(job_name, :title)
+	  p = i18n_job(job_name, :description)

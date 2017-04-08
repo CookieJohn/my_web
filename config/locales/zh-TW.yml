@@ -1,22 +1,44 @@
 zh-TW:
   common:
-    job: 經歷
-
+    jobs: 工作經驗
+    skills: 技能
   user:
     label:
       name: 姓名：
     content:
       name: 吳秉勳 (John)
+  skills:
+    label:
+      front_end: 前端：
+      back_end: 後端：
+      database: 資料庫：
+      server: 伺服器：
+      other: 其他：
+    content:
+      front_end: JavaScript, CSS
+      back_end: Ruby on rails
+      database: PostgreSQL
+      server: AWS, Ubuntu
+      other: Elasticsearch
   job:
     TripMoment: 
-      start_time: February 2016
+      start_year: 2016
+      start_month: February
       title: 勁取股份有限公司
       description: 時刻旅行
+      url: https://tripmoment.com/
+      image_url: 'logos/tripmoment.jpg'
     III: 
-      start_time: June 2015
+      start_year: 2015
+      start_month: June
       title: 資訊工業策進會
       description: 創新應用服務研究所
+      url: http://www.ideas.iii.org.tw/
+      image_url: 'logos/iii.png'
     Cathay: 
-      start_time: September 2014
+      start_year: 2014
+      start_month: September
       title: 國泰世華銀行
       description: 信用卡部
+      url: https://www.cathaybk.com.tw/cathaybk/
+      image_url: 'logos/cathay.jpg'
