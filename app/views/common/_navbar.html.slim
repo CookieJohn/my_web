@@ -1,6 +1,16 @@
-nav.navbar.navbar-inverse
+nav.navbar.navbar-inverse.navbar-fixed-top style=('panding-bottom: 50p;')
 	.container-fluid
 		.navbar-header
 			a.navbar-brand href=""  JohnWu
-			ul.nav.navbar-nav
-				li.active = link_to '自我介紹', resume_url
+		ul.nav.navbar-nav
+			li.active = link_to '自我介紹', resume_url
+		ul.nav.navbar-nav.navbar-right
+		  li
+		    a href="#home" 
+		      | Home
+		  li
+		    a href="#skills" 
+		      | Skills
+		  li
+		    a href="#jobs" 
+		      | Jobs

@@ -1,9 +1,7 @@
-.text-center
-	.user
-		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'image img-responsive center-block'
-		hr.divider
-		.info
-	h3 = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+section#home
+	.text-center
+		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
+		h3 = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
 
 section#skills
 	.container
