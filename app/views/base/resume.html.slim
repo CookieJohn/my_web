@@ -1,9 +1,8 @@
 .col-md-3.back
 	.user
-		- ENV['FB_ID'] ||= ENV["RACK_ENV"] == 'production' ? ENV['FB_ID'] : '4'
-		= image_tag "https://graph.facebook.com/#{ENV['FB_ID']}/picture?type=large", size: '200x200', class: 'image img-responsive center-block'
+		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'image img-responsive center-block'
 		hr.divider
 		.info
-			= i18n_user_label('name') + i18n_user_content('name')
+			= i18n_user_label(:name) + i18n_user_content(:name)
 .col-md-9.container-fluid
 	h4 = '經歷'
