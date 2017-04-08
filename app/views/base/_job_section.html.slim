@@ -8,8 +8,13 @@
 /     p.text-muted = i18n_job(job_name, :description)
 .timeline-entry-inner
 	time.timeline-time datetime="2014-01-10T03:45" 
-	  span = i18n_job(job_name, :start_year)
-	  span = i18n_job(job_name, :start_month)
+	  .text-center
+		  h4 = i18n_job(job_name, :start_year)
+		  h5 = i18n_job(job_name, :start_month)
+		  h6 = '|'
+		  h4 = i18n_job(job_name, :end_year)
+		  - if i18n_job(job_name, :end_year) != 'present'
+		  	h5 = i18n_job(job_name, :end_month)
 	/ .timeline-icon.bg-success
 	.timeline-icon
 	  / i.entypo-feather

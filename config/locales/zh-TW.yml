@@ -24,6 +24,8 @@ zh-TW:
     TripMoment: 
       start_year: 2016
       start_month: February
+      end_year: present
+      end_month: present
       title: 勁取股份有限公司
       description: 時刻旅行
       url: https://tripmoment.com/
@@ -31,6 +33,8 @@ zh-TW:
     III: 
       start_year: 2015
       start_month: June
+      end_year: 2016
+      end_month: February
       title: 資訊工業策進會
       description: 創新應用服務研究所
       url: http://www.ideas.iii.org.tw/
@@ -38,6 +42,8 @@ zh-TW:
     Cathay: 
       start_year: 2014
       start_month: September
+      end_year: 2015
+      end_month: June
       title: 國泰世華銀行
       description: 信用卡部
       url: https://www.cathaybk.com.tw/cathaybk/
