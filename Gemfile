@@ -34,5 +34,6 @@ group :development do
   gem 'puma'
   gem 'quiet_assets'
   gem 'better_errors'
+  gem 'pry'
 end
 
