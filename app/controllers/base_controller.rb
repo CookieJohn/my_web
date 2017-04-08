@@ -5,7 +5,4 @@ class BaseController < ApplicationController
   	set_meta
   end
 
-  def resume
-  	set_meta
-  end
 end

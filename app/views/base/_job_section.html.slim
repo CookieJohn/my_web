@@ -1,0 +1,8 @@
+.timeline-image
+  img.rounded-circle.img-fluid alt="" src="" /
+.timeline-panel
+  .timeline-heading
+    h4 = i18n_job(job_name, :start_time)
+    h4.subheading = i18n_job(job_name, :title)
+  .timeline-body
+    p.text-muted = i18n_job(job_name, :description)

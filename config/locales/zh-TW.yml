@@ -1,6 +1,22 @@
 zh-TW:
+  common:
+    job: 經歷
+
   user:
     label:
       name: 姓名：
     content:
-      name: 吳秉勳
+      name: 吳秉勳 (John)
+  job:
+    TripMoment: 
+      start_time: February 2016
+      title: 勁取股份有限公司
+      description: 時刻旅行
+    III: 
+      start_time: June 2015
+      title: 資訊工業策進會
+      description: 創新應用服務研究所
+    Cathay: 
+      start_time: September 2014
+      title: 國泰世華銀行
+      description: 信用卡部
