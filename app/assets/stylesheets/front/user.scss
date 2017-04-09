@@ -1,3 +1,5 @@
+// http://bootsnipp.com/snippets/featured/profile-card
+
 .card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
@@ -194,7 +196,7 @@
 .card.hovercard .cardheader {
     background: image-url("user_background.jpg");
     background-size: cover;
-    height: 135px;
+    height: 35vh;
 }
 
 .card.hovercard .avatar {
