@@ -1,4 +1,35 @@
+/ section#home
+/ 	.text-center
+/ 		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
+/ 		h3 = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+/ 		h3 = "#{i18n_user_label(:education_master)} #{i18n_user_content(:education_master)}"
+/ 		h3 = "#{i18n_user_label(:education_bachelor)} #{i18n_user_content(:education_bachelor)}"
+/ link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /
 section#home
 	.text-center
-		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
-		h3 = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+    .card.hovercard
+      .cardheader
+      .avatar
+        = image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
+      .info
+        .title
+          = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+        .desc = i18n_common(:job_title)
+        .desc = "#{i18n_user_label(:education_master)} #{i18n_user_content(:education_master)}"
+      .bottom
+      	= link_to i18n_common(:github), target: '_blank' do
+      		= image_tag 'logos/github.svg', size: '30x30'
+      	= ' '
+      	= link_to i18n_common(:linkedin), target: '_blank' do
+      		= image_tag 'logos/linkedin.svg', size: '30x30'
+      	= ' '
+      	= mail_to i18n_common(:email) do
+      		= image_tag 'logos/email.png', size: '30x30'
+        / a.btn.btn-primary.btn-twitter.btn-sm href="https://twitter.com/webmaniac" 
+        /   i.fa.fa-twitter
+        / a.btn.btn-danger.btn-sm href="https://plus.google.com/+ahmshahnuralam" rel="publisher" 
+        /   i.fa.fa-google-plus
+        / a.btn.btn-primary.btn-sm href="https://plus.google.com/shahnuralam" rel="publisher" 
+        /   i.fa.fa-facebook
+        / a.btn.btn-warning.btn-sm href="https://plus.google.com/shahnuralam" rel="publisher" 
+        /   i.fa.fa-behance

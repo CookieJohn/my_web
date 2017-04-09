@@ -1,12 +1,20 @@
 zh-TW:
   common:
+    job_title: 職稱：後端工程師
     jobs: 工作經驗
     skills: 技能
+    email: johnwu2613@gmail.com
+    github: https://github.com/CookieJohn
+    linkedin: https://www.linkedin.com/in/pinghsunwu1115/
   user:
     label:
       name: 姓名：
+      education_master: 碩士：
+      education_bachelor: 學士：
     content:
       name: 吳秉勳 (John)
+      education_master: 長庚大學資訊管理學系碩士班
+      education_bachelor: 長庚大學資訊管理學系
   skills:
     label:
       front_end: 前端：
