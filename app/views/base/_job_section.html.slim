@@ -25,9 +25,3 @@
 	    = link_to i18n_job(job_name, :title), i18n_job(job_name, :url), target: '_blank'
 	    / span = i18n_job(job_name, :title)
 	  p = i18n_job(job_name, :description)
-	  div.collapse.in
-		  = link_to "##{job_name}", "data-toggle": "collapse" do
-		  	= "詳細"
-	  end
-  	div.collapse id=job_name
-    	p = '測試內容'
