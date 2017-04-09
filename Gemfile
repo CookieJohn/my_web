@@ -7,6 +7,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'meta-tags'
 gem 'rails-i18n'
+gem "font-awesome-rails"
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

@@ -1,16 +1,21 @@
 nav.navbar.navbar-inverse.navbar-fixed-top style=('panding-bottom: 50p;')
-	.container-fluid
+	.container
 		.navbar-header
-			a.navbar-brand href=""  JohnWu
-		ul.nav.navbar-nav
-			li.active = link_to '自我介紹', resume_url
-		ul.nav.navbar-nav.navbar-right
-		  li
-		    a href="#home" 
-		      | Home
-		  li
-		    a href="#skills" 
-		      | Skills
-		  li
-		    a href="#jobs" 
-		      | Jobs
+			a.navbar-brand href=root_url  JohnWu
+
+			button#hamburger.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+			  span.icon-bar
+			  span.icon-bar
+			  span.icon-bar
+
+		div.collapse.navbar-collapse
+			ul.nav.navbar-nav.navbar-right
+			  li = link_to "#home" do
+			  	i.fa.fa-home
+			  	= ' Home'
+			  li = link_to "#skills" do
+			  	i.fa.fa-list-alt
+			  	= ' Skills'
+			  li = link_to "#jobs" do
+			  	i.fa.fa-table
+			  	= ' Jobs'

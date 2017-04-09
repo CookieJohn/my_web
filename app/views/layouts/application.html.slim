@@ -6,10 +6,11 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  body style=('padding: 60px 0 50px 0;')
+  body data-spy="scroll" data-target=".navbar" data-offset="50" style=('padding: 60px 0 50px 0;')
     / Nav
   	= render partial: "common/navbar"
     = yield
+    / Footer
     = render partial: "common/footer"
     / GA
     = render partial: "common/google_analytics"
