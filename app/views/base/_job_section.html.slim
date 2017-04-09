@@ -1,13 +1,5 @@
-/ .timeline-image
-/   img.rounded-circle.img-fluid alt="" src="" /
-/ .timeline-panel
-/   .timeline-heading
-/     h4 = i18n_job(job_name, :start_time)
-/     h4.subheading = i18n_job(job_name, :title)
-/   .timeline-body
-/     p.text-muted = i18n_job(job_name, :description)
 .timeline-entry-inner
-	time.timeline-time datetime="2014-01-10T03:45" 
+	time.timeline-time
 	  .text-center
 		  h4 = i18n_job(job_name, :start_year)
 		  h5 = i18n_job(job_name, :start_month)
@@ -34,4 +26,5 @@
 			/ 	i.fa.fa-angle-double-down.fa-2x
 		.col-sm-12
 			div.collapse id=job_name
-			  = simple_format i18n_job(job_name, :job_description)
+				hr style="width: 100%; color: black; height: 1px; background-color:black;"
+				= simple_format i18n_job(job_name, :job_description)

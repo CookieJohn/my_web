@@ -6,4 +6,8 @@ module ApplicationHelper
 	def jobs_array
 		['TripMoment','III','Cathay']
 	end
+
+	def skills_array
+		['js','css','bootstrap','back_end','database','aws','ubuntu','other']
+	end
 end

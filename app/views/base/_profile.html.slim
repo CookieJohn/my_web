@@ -13,8 +13,8 @@ section#home
         = image_tag 'user.jpg', size: '200x200', class: 'user_avatar img-responsive center-block'
       .info
         .title = i18n_user_content(:name)
-        .desc = i18n_common(:job_title)
-        .desc = i18n_user_content(:education_master)
+        .h3.section-subheading.text-muted = i18n_common(:job_title)
+        h3.section-subheading.text-muted = i18n_user_content(:education_master)
       .bottom
       	= link_to i18n_common(:github), target: '_blank' do
       		= image_tag 'logos/github.svg', size: '30x30'

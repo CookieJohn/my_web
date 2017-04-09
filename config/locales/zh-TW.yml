@@ -13,7 +13,7 @@ zh-TW:
       education_bachelor: 學士：
     content:
       name: 吳秉勳 (John)
-      education_master: 長庚大學資訊管理學系碩士班
+      education_master: 長庚大學資訊管理碩士
       education_bachelor: 長庚大學資訊管理學系
   skills:
     label:
@@ -25,11 +25,21 @@ zh-TW:
     content:
       js: JavaScript
       css: CSS
+      bootstrap: Bootstrap
       back_end: Ruby on rails
       database: PostgreSQL
       aws: AWS
       ubuntu: Ubuntu
       other: Elasticsearch
+    width:
+      js: 35
+      css: 25
+      bootstrap: 40
+      back_end: 75
+      database: 60
+      aws: 55
+      ubuntu: 50
+      other: 20
   job:
     TripMoment: 
       start_year: 2016
@@ -40,9 +50,9 @@ zh-TW:
       description: 時刻旅行
       job_description: |
         Ruby on rails 網站開發
-        AWS server管理
         金流串接(智付通)
         電子發票串接(智付寶)
+        AWS server管理
       url: https://tripmoment.com/
       image_url: 'logos/tripmoment.jpg'
     III: 
@@ -66,6 +76,6 @@ zh-TW:
       job_description: |
         C# 內部應用程式開發
         VB6 程式維護
-        MSSQL Script
+        MSSQL Script撰寫
       url: https://www.cathaybk.com.tw/cathaybk/
       image_url: 'logos/cathay.jpg'
