@@ -1,53 +1,5 @@
-section#home
-	.text-center
-		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
-		h3 = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+= render partial: "profile"
 
-section#skills
-	.container
-    .row
-      .col-md-12.text-center
-        h3.section-subheading.text-muted = i18n_common(:skills)
-	.col-md-offset-4.col-md-4
-		= i18n_skills(:label, :front_end)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 35%;")
-				span = i18n_skills(:content, :js)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 25%;")
-				span = i18n_skills(:content, :css)
-		= i18n_skills(:label, :back_end)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 75%;")
-				span = i18n_skills(:content, :back_end)
-		= i18n_skills(:label, :database)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 60%;")
-				span = i18n_skills(:content, :database)
-		= i18n_skills(:label, :server)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 55%;")
-				span = i18n_skills(:content, :aws)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 50%;")
-				span = i18n_skills(:content, :ubuntu)
-		= i18n_skills(:label, :other)
-		.progress
-			.progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" style=("width: 35%;")
-				span = i18n_skills(:content, :other)
+= render partial: "skills"
 
-section#jobs
-  .container
-    .row
-      .col-md-12.text-center
-        / h2.section-heading 經歷
-        h3.section-subheading.text-muted = i18n_common(:jobs)
-    .row
-      .timeline-centered
-		- jobs_array.each_with_index do |job_name, index| 
-			- if index.odd?
-				article.timeline-entry
-					= render partial: "job_section", locals: {job_name: job_name}
-			- else 
-				article.timeline-entry.left-aligned
-					= render partial: "job_section", locals: {job_name: job_name}
+= render partial: "jobs"

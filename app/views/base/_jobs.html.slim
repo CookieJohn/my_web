@@ -1,0 +1,15 @@
+section#jobs
+  .container
+    .row
+      .col-md-12.text-center
+        / h2.section-heading 經歷
+        h3.section-subheading.text-muted = i18n_common(:jobs)
+    .row
+      .timeline-centered
+		- jobs_array.each_with_index do |job_name, index| 
+			- if index.odd?
+				article.timeline-entry
+					= render partial: "job_section", locals: {job_name: job_name}
+			- else 
+				article.timeline-entry.left-aligned
+					= render partial: "job_section", locals: {job_name: job_name}

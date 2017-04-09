@@ -1,0 +1,4 @@
+section#home
+	.text-center
+		= image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
+		h3 = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
