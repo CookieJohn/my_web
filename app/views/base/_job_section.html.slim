@@ -19,9 +19,19 @@
 	.timeline-icon
 	  / i.entypo-feather
 	  = image_tag i18n_job(job_name, :image_url), size: '30x30'
-	.timeline-label
-	  h2
-	    / a href="#"  Art Ramadani
-	    = link_to i18n_job(job_name, :title), i18n_job(job_name, :url), target: '_blank'
-	    / span = i18n_job(job_name, :title)
-	  p = i18n_job(job_name, :description)
+	.timeline-label.col-sm-11
+		.col-sm-10
+		  h2
+		    / a href="#"  Art Ramadani
+		    = link_to i18n_job(job_name, :title), i18n_job(job_name, :url), target: '_blank'
+		    / span = i18n_job(job_name, :title)
+		  = i18n_job(job_name, :description)
+		.col-sm-2
+			a aria-controls="collapseExample" aria-expanded="false" data-toggle="collapse" href="##{job_name}"
+			  i.fa.fa-angle-double-down.fa-2x
+			  i.fa.fa-angle-double-up.fa-2x
+			/ h2 = link_to "##{job_name}", "data-toggle": "collapse" do
+			/ 	i.fa.fa-angle-double-down.fa-2x
+		.col-sm-12
+			div.collapse id=job_name
+			  = simple_format i18n_job(job_name, :job_description)

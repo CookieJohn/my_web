@@ -38,6 +38,11 @@ zh-TW:
       end_month: present
       title: 勁取股份有限公司
       description: 時刻旅行
+      job_description: |
+        Ruby on rails 網站開發
+        AWS server管理
+        金流串接(智付通)
+        電子發票串接(智付寶)
       url: https://tripmoment.com/
       image_url: 'logos/tripmoment.jpg'
     III: 
@@ -47,6 +52,8 @@ zh-TW:
       end_month: February
       title: 資訊工業策進會
       description: 創新應用服務研究所
+      job_description: |
+        Ruby on rails網站開發
       url: http://www.ideas.iii.org.tw/
       image_url: 'logos/iii.png'
     Cathay: 
@@ -56,5 +63,9 @@ zh-TW:
       end_month: June
       title: 國泰世華銀行
       description: 信用卡部
+      job_description: |
+        C# 內部應用程式開發
+        VB6 程式維護
+        MSSQL Script
       url: https://www.cathaybk.com.tw/cathaybk/
       image_url: 'logos/cathay.jpg'

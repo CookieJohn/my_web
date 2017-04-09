@@ -1,5 +1,14 @@
 // http://bootsnipp.com/snippets/featured/timeline-dotted
 
+// custom
+a[aria-expanded=true] .fa-angle-double-down {
+   display: none;
+}
+a[aria-expanded=false] .fa-angle-double-up {
+   display: none;
+}
+
+
 img
 {
 	vertical-align: middle;
