@@ -10,7 +10,7 @@ section#home
     .card.hovercard
       .cardheader
       .avatar
-        = image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
+        = image_tag 'user.jpg', size: '200x200', class: 'user_avatar img-responsive center-block'
       .info
         .title = i18n_user_content(:name)
         .desc = i18n_common(:job_title)
