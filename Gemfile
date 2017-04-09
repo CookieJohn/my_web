@@ -23,6 +23,7 @@ gem 'pg', '~> 0.15'
 group :production do
 	# heroku
 	gem 'rails_12factor'
+	gem 'heroku-deflater'
 end
 
 group :development, :test do
