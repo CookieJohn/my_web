@@ -12,10 +12,9 @@ section#home
       .avatar
         = image_tag "https://graph.facebook.com/#{get_fb_id}/picture?type=large", size: '200x200', class: 'user_avatar img-responsive center-block'
       .info
-        .title
-          = "#{i18n_user_label(:name)} #{i18n_user_content(:name)}"
+        .title = i18n_user_content(:name)
         .desc = i18n_common(:job_title)
-        .desc = "#{i18n_user_label(:education_master)} #{i18n_user_content(:education_master)}"
+        .desc = i18n_user_content(:education_master)
       .bottom
       	= link_to i18n_common(:github), target: '_blank' do
       		= image_tag 'logos/github.svg', size: '30x30'
