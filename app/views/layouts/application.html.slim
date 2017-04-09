@@ -4,7 +4,7 @@ html
     = favicon_link_tag 'favicon.ico'
     = display_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true, defer: "defer"
     = csrf_meta_tags
   body data-spy="scroll" data-target=".navbar" data-offset="50" style=('padding: 40px 0 50px 0;')
     / Nav
