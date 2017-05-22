@@ -22,6 +22,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # db
 gem 'pg', '~> 0.15'
 
+gem 'puma'
+
 group :production do
 	# heroku
 	gem 'rails_12factor'
@@ -35,7 +37,6 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'puma'
   gem 'better_errors'
   gem 'pry'
 end
