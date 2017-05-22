@@ -1,20 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+ruby '2.4.1'
+
+gem 'rails', '5.1.0'
 
 # front
 gem 'slim-rails'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass'
 gem 'meta-tags'
 gem 'rails-i18n'
 gem "font-awesome-rails"
 
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # db
@@ -34,7 +36,6 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'puma'
-  gem 'quiet_assets'
   gem 'better_errors'
   gem 'pry'
 end
