@@ -24,6 +24,9 @@ section#home
       	= ' '
       	= mail_to i18n_common(:email) do
       		= image_tag 'logos/email.png', size: '30x30'
+        = ' '
+        = link_to i18n_common(:medium), target: '_blank' do
+          = image_tag 'logos/medium.png', size: '30x30'
         / a.btn.btn-primary.btn-twitter.btn-sm href="https://twitter.com/webmaniac" 
         /   i.fa.fa-twitter
         / a.btn.btn-danger.btn-sm href="https://plus.google.com/+ahmshahnuralam" rel="publisher" 
