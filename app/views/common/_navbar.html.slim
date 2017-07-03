@@ -10,12 +10,12 @@ nav.navbar.navbar-inverse.navbar-fixed-top style=('panding-bottom: 50p;')
 
 		div.collapse.navbar-collapse
 			ul.nav.navbar-nav.navbar-right
-			  li = link_to "#home" do
+			  li = link_to "#home", id: 'home_position' do
 			  	i.fa.fa-home
 			  	= ' Home'
-			  li = link_to "#skills" do
+			  li = link_to "#skills", id: 'skills_position' do
 			  	i.fa.fa-list-alt
 			  	= ' Skills'
-			  li = link_to "#jobs" do
+			  li = link_to "#jobs", id: 'jobs_position' do
 			  	i.fa.fa-table
 			  	= ' Jobs'
